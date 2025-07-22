@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>بطولات لقرع | L9RA3 GAMING</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="dark-theme">
+    <header>
+        <div class="container">
+            <h1>بطولات لقرع | L9RA3 GAMING</h1>
+            <div class="header-controls">
+                <div class="language-switcher">
+                    <button class="lang-btn active" id="ar-btn">العربية</button>
+                    <button class="lang-btn" id="en-btn">English</button>
+                </div>
+                <button id="theme-toggle" class="theme-toggle">
+                    <i class="fas fa-moon"></i>
+                    <i class="fas fa-sun hidden"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="tournament-info">
+                    <h2 class="lang-ar">بطولة فري فاير الكبرى</h2>
+                    <h2 class="lang-en hidden">Free Fire Pro Tournament</h2>
+                    
+                    <div class="info-card">
+                        <div class="info-item">
+                            <i class="fas fa-trophy gold-icon"></i>
+                            <span class="lang-ar">الجوائز: $80</span>
+                            <span class="lang-en hidden"> Prizes: $80</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-calendar-alt gold-icon"></i>
+                            <span class="lang-ar">التاريخ: 25 جويلية 2025</span>
+                            <span class="lang-en hidden"> Date: July 25, 2025</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-users gold-icon"></i>
+                            <span class="lang-ar">عدد الفرق: 30 فريق</span>
+                            <span class="lang-en hidden"> Teams: 30</span>
+                        </div>
+                    </div>
+                    
+                    <button id="register-btn" class="cta-btn">
+                        <span class="lang-ar">سجل سكوادك الآن</span>
+                        <span class="lang-en hidden">Register Your Squad Now</span>
+                    </button>
+                </div>
+                
+                <div class="hero-image">
+                    <div class="fire-effect"></div>
+                    <img src="images.jpg" class="tournament-img">
+                </div>
+            </div>
+        </section>
+
+        <section class="rules-section">
+            <div class="container">
+                <h2 class="lang-ar">شروط المشاركة</h2>
+                <h2 class="lang-en hidden">Participation Rules</h2>
+                
+                <ul class="rules-list lang-ar">
+                    <li>يجب أن يتكون الفريق من 4 لاعبين + 4 تاق</li>
+                    <li>يجب أن يكون مستوى الحساب 40 على الأقل</li>
+                    <li>يجب تقديم معلومات دقيقة وصحيحة</li>
+                    <li>سيتم استبعاد أي فريق يثبت تورطه في الغش</li>
+                </ul>
+                
+                <ul class="rules-list lang-en hidden">
+                    <li>The team must consist of 4 players + leader</li>
+                    <li>Account level must be at least 40</li>
+                    <li>Accurate and correct information must be provided</li>
+                    <li>Any team proven to be involved in cheating will be disqualified</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <div class="modal" id="registration-modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2 class="lang-ar">تسجيل الفريق</h2>
+            <h2 class="lang-en hidden">Squad Registration</h2>
+            
+            <form id="registration-form">
+                <div class="form-group">
+                    <label for="squad-name" class="lang-ar">اسم السكواد</label>
+                    <label for="squad-name" class="lang-en hidden">Squad Name</label>
+                    <input type="text" id="squad-name" name="squad-name" placeholder="أدخل اسم السكواد" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="leader-id" class="lang-ar">ID القائد</label>
+                    <label for="leader-id" class="lang-en hidden">Leader ID</label>
+                    <input type="text" id="leader-id" name="leader-id" placeholder="أدخل ID القائد" required>
+                </div>
+                
+                <h3 class="lang-ar">معلومات اللاعبين</h3>
+                <h3 class="lang-en hidden">Players Information</h3>
+                
+                <div class="player-fields">
+                    <div class="form-group">
+                        <label for="player1-name" class="lang-ar">اسم اللاعب 1</label>
+                        <label for="player1-name" class="lang-en hidden">Player 1 Name</label>
+                        <input type="text" id="player1-name" name="player1-name" placeholder="أدخل اسم اللاعب" required>
+                        <label for="player1-id" class="lang-ar">ID اللاعب 1</label>
+                        <label for="player1-id" class="lang-en hidden">Player 1 ID</label>
+                        <input type="text" id="player1-id" name="player1-id" placeholder="أدخل ID اللاعب" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="player2-name" class="lang-ar">اسم اللاعب 2</label>
+                        <label for="player2-name" class="lang-en hidden">Player 2 Name</label>
+                        <input type="text" id="player2-name" name="player2-name" placeholder="أدخل اسم اللاعب" required>
+                        <label for="player2-id" class="lang-ar">ID اللاعب 2</label>
+                        <label for="player2-id" class="lang-en hidden">Player 2 ID</label>
+                        <input type="text" id="player2-id" name="player2-id" placeholder="أدخل ID اللاعب" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="player3-name" class="lang-ar">اسم اللاعب 3</label>
+                        <label for="player3-name" class="lang-en hidden">Player 3 Name</label>
+                        <input type="text" id="player3-name" name="player3-name" placeholder="أدخل اسم اللاعب" required>
+                        <label for="player3-id" class="lang-ar">ID اللاعب 3</label>
+                        <label for="player3-id" class="lang-en hidden">Player 3 ID</label>
+                        <input type="text" id="player3-id" name="player3-id" placeholder="أدخل ID اللاعب" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="player4-name" class="lang-ar">اسم اللاعب 4</label>
+                        <label for="player4-name" class="lang-en hidden">Player 4 Name</label>
+                        <input type="text" id="player4-name" name="player4-name" placeholder="أدخل اسم اللاعب" required>
+                        <label for="player4-id" class="lang-ar">ID اللاعب 4</label>
+                        <label for="player4-id" class="lang-en hidden">Player 4 ID</label>
+                        <input type="text" id="player4-id" name="player4-id" placeholder="أدخل ID اللاعب" required>
+                    </div>
+                </div>
+                
+                <div class="form-group phone-group">
+                    <label class="lang-ar">رقم واتساب القائد</label>
+                    <label class="lang-en hidden">Leader WhatsApp Number</label>
+                    <div class="phone-input">
+                        <select id="country-code" name="country-code" required>
+                            <option value="" disabled selected class="lang-ar">اختر رمز الدولة</option>
+                            <option value="" disabled selected class="lang-en hidden">Select Country Code</option>
+                            <option value="+213">Algeria (+213)</option>
+                            <option value="+966">Saudi Arabia (+966)</option>
+                            <option value="+20">Egypt (+20)</option>
+                            <option value="+971">UAE (+971)</option>
+                            <option value="+962">Jordan (+962)</option>
+                            <option value="+212">Morocco (+212)</option>
+                            <option value="+216">Tunisia (+216)</option>
+                            <option value="+974">Qatar (+974)</option>
+                            <option value="+965">Kuwait (+965)</option>
+                            <option value="+968">Oman (+968)</option>
+                            <option value="+973">Bahrain (+973)</option>
+                            <option value="+964">Iraq (+964)</option>
+                            <option value="+249">Sudan (+249)</option>
+                            <option value="+967">Yemen (+967)</option>
+                            <option value="+252">Somalia (+252)</option>
+                            <option value="+961">Lebanon (+961)</option>
+                            <option value="+963">Syria (+963)</option>
+                            <option value="+218">Libya (+218)</option>
+                            <option value="+222">Mauritania (+222)</option>
+                            <option value="+970">Palestine (+970)</option>
+                        </select>
+                        <input type="tel" id="whatsapp" name="whatsapp" placeholder="أدخل رقم الهاتف" required>
+                    </div>
+                </div>
+                
+                <button type="submit" class="submit-btn">
+                    <span class="lang-ar">إرسال التسجيل</span>
+                    <span class="lang-en hidden">Submit Registration</span>
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <div class="modal" id="success-modal">
+        <div class="modal-content success-content">
+            <i class="fas fa-check-circle success-icon"></i>
+            <h2 class="lang-ar">تم إرسال طلب تسجيلك</h2>
+            <h2 class="lang-en hidden">Your registration has been submitted</h2>
+            <p class="lang-ar">سيتم مراجعة سكوادك، وإذا تم قبوله سيتم التواصل معك عبر واتساب.</p>
+            <p class="lang-en hidden">Your squad will be reviewed, and if accepted, we will contact you via WhatsApp.</p>
+            <button class="ok-btn lang-ar">حسنًا</button>
+            <button class="ok-btn lang-en hidden">OK</button>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="social-links">
+                <a href="https://www.instagram.com/l9ra3_gaming/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://kick.com/l9ra3_gaming" target="_blank"><i class="fas fa-gamepad"></i></a>
+                <a href="https://www.tiktok.com/@l9ra3_gaming2?lang=fr" target="_blank"><i class="fab fa-tiktok"></i></a>
+                <a href="https://discord.com/invite/y2aHAy7tNN" target="_blank"><i class="fab fa-discord"></i></a>
+            </div>
+            <p class="lang-ar">جميع الحقوق محفوظة &copy; 2025 بطولات لقرع | تم التطوير بواسطة majhol</p>
+            <p class="lang-en hidden">All rights reserved &copy; 2025 L9RA3 Tournaments | Developed by majhol</p>
+            <p class="instagram-credit">
+                <a href="https://www.instagram.com/xx_soufi_39/" target="_blank">
+                    <i class="fab fa-instagram"></i> xx_soufi_39
+                </a>
+            </p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
