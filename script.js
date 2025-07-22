@@ -163,13 +163,7 @@ document.addEventListener('DOMContentLoaded', function() {
         .then(data => {
             console.log('Success:', data);
         })
-        .catch(error => {
-            console.error('Error:', error);
-            // Show error message to user
-            alert(document.documentElement.lang === 'ar' ? 
-                  'حدث خطأ أثناء إرسال التسجيل، يرجى المحاولة مرة أخرى' : 
-                  'An error occurred while submitting, please try again');
-        });
+
     }
     
     // Auto-select Algeria country code by default
