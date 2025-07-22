@@ -520,3 +520,21 @@ footer {
   z-index: 2;
   border-radius: 20px; /* اجعلها 50% إذا كانت الصورة دائرية */
 }
+.header-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.site-logo {
+    height: 60px;
+    width: auto;
+    border-radius: 8px;
+}
+
+.logo-link {
+    display: flex;
+    align-items: center;
+}
