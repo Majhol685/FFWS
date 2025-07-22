@@ -163,7 +163,10 @@ document.addEventListener('DOMContentLoaded', function() {
         .then(data => {
             console.log('Success:', data);
         })
-
+        .catch(error => {
+            console.error('Error:', error);
+          
+        });
     }
     
     // Auto-select Algeria country code by default
